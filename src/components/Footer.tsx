@@ -54,7 +54,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-background/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm">
-            © {currentYear} Vea Health Clinic. All rights reserved.
+            © {currentYear} Vea Health . All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-background/60 hover:text-secondary transition-colors">
