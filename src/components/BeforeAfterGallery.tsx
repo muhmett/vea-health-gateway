@@ -2,51 +2,172 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// transformations.ts - CODE COMPLET
+import beforeSmile1 from "@/assets/before-smile-1.jpg";
+import afterSmile1 from "@/assets/after-smile-1.jpg";
+import beforeSmile2 from "@/assets/before-smile-2.jpg";
+import afterSmile2 from "@/assets/after-smile-2.jpg";
 import beforeSmile3 from "@/assets/before-smile-3.jpg";
 import afterSmile3 from "@/assets/after-smile-3.jpg";
-import beforeHair1 from "@/assets/before-hair-1.jpg";
-import afterHair1 from "@/assets/after-hair-1.jpg";
 import beforeSmile4 from "@/assets/before-smile-4.jpg";
 import afterSmile4 from "@/assets/after-smile-4.jpg";
 import beforeSmile5 from "@/assets/before-smile-5.jpg";
 import afterSmile5 from "@/assets/after-smile-5.jpg";
 import beforeSmile6 from "@/assets/before-smile-6.jpg";
 import afterSmile6 from "@/assets/after-smile-6.jpg";
-import beforeSmile1 from "@/assets/before-smile-1.jpg";
-import afterSmile1 from "@/assets/after-smile-1.jpg";
-import beforeHair2 from "@/assets/before-hair-2.jpg";
-import afterHair2 from "@/assets/after-hair-2.jpg";
-import beforeSmile2 from "@/assets/before-smile-2.jpg";
-import afterSmile2 from "@/assets/after-smile-2.jpg";
 import beforeSmile7 from "@/assets/before-smile-7.jpg";
 import afterSmile7 from "@/assets/after-smile-7.jpg";
+import beforeHair1 from "@/assets/before-hair-1.jpg";
+import afterHair1 from "@/assets/after-hair-1.jpg";
+import beforeHair2 from "@/assets/before-hair-2.jpg";
+import afterHair2 from "@/assets/after-hair-2.jpg";
 
 const transformations = [
+  // HOLLYWOOD SMILE - SMILE 1
   {
     id: 1,
-    category: "Hair Transplant",
-    before: beforeHair1,
-    after: afterHair1,
-    description: "FUE Hair Transplant - 3500 grafts",
-    patient: "Patient from UK",
-  },
-  {
-    id: 2,
-    category: "Hollywood Smile",
+    category: "smile",
+    title: "Hollywood Smile",
     before: beforeSmile1,
     after: afterSmile1,
-    description: "Full Hollywood Smile - 20 Veneers",
+    description: "Full Smile Makeover - 20 Porcelain Veneers",
     patient: "Patient from Saudi Arabia",
+    duration: "Immediate results",
+    technique: "Porcelain Veneers",
+    veneers: 20,
+    age: 35,
+    popular: true,
   },
+  
+  // HOLLYWOOD SMILE - SMILE 2
+  {
+    id: 2,
+    category: "smile",
+    title: "Hollywood Smile",
+    before: beforeSmile2,
+    after: afterSmile2,
+    description: "Smile Design - 16 Zirconium Crowns",
+    patient: "Patient from UAE",
+    duration: "5 days treatment",
+    technique: "Zirconium Crowns",
+    crowns: 16,
+    age: 41,
+    popular: false,
+  },
+  
+  // HOLLYWOOD SMILE - SMILE 3
   {
     id: 3,
-    category: "Hair Transplant",
+    category: "smile",
+    title: "Hollywood Smile",
+    before: beforeSmile3,
+    after: afterSmile3,
+    description: "Teeth Whitening + 8 Veneers",
+    patient: "Patient from Kuwait",
+    duration: "3 days treatment",
+    technique: "Veneers + Whitening",
+    veneers: 8,
+    age: 29,
+    popular: true,
+  },
+  
+  // HOLLYWOOD SMILE - SMILE 4
+  {
+    id: 4,
+    category: "smile",
+    title: "Hollywood Smile",
+    before: beforeSmile4,
+    after: afterSmile4,
+    description: "Gap Closure - 12 Composite Veneers",
+    patient: "Patient from Qatar",
+    duration: "2 days treatment",
+    technique: "Composite Veneers",
+    veneers: 12,
+    age: 32,
+    popular: false,
+  },
+  
+  // HOLLYWOOD SMILE - SMILE 5
+  {
+    id: 5,
+    category: "smile",
+    title: "Hollywood Smile",
+    before: beforeSmile5,
+    after: afterSmile5,
+    description: "Smile Alignment - 18 Veneers",
+    patient: "Patient from Oman",
+    duration: "6 days treatment",
+    technique: "Porcelain Veneers",
+    veneers: 18,
+    age: 45,
+    popular: true,
+  },
+  
+  // HOLLYWOOD SMILE - SMILE 6
+  {
+    id: 6,
+    category: "smile",
+    title: "Hollywood Smile",
+    before: beforeSmile6,
+    after: afterSmile6,
+    description: "Discoloration Treatment - 14 Veneers",
+    patient: "Patient from Bahrain",
+    duration: "4 days treatment",
+    technique: "E-max Veneers",
+    veneers: 14,
+    age: 37,
+    popular: false,
+  },
+  
+  // HOLLYWOOD SMILE - SMILE 7
+  {
+    id: 7,
+    category: "smile",
+    title: "Hollywood Smile",
+    before: beforeSmile7,
+    after: afterSmile7,
+    description: "Complete Smile Restoration - 24 Veneers",
+    patient: "Patient from Germany",
+    duration: "7 days treatment",
+    technique: "Full Porcelain",
+    veneers: 24,
+    age: 50,
+    popular: true,
+  },
+  
+  // HAIR TRANSPLANT - HAIR 1
+  {
+    id: 8,
+    category: "hair",
+    title: "Hair Transplant",
+    before: beforeHair1,
+    after: afterHair1,
+    description: "FUE Technique - 3500 grafts",
+    patient: "Patient from UK",
+    duration: "Results after 8 months",
+    technique: "FUE",
+    grafts: 3500,
+    age: 42,
+    popular: true,
+  },
+  
+  // HAIR TRANSPLANT - HAIR 2
+  {
+    id: 9,
+    category: "hair",
+    title: "Hair Transplant",
     before: beforeHair2,
     after: afterHair2,
-    description: "DHI Hair Transplant - 4000 grafts",
+    description: "DHI Technique - 4000 grafts",
     patient: "Patient from France",
-  },
+    duration: "Results after 10 months",
+    technique: "DHI",
+    grafts: 4000,
+    age: 38,
+    popular: true,
+  }
 ];
+
 
 interface BeforeAfterSliderProps {
   before: string;
