@@ -2,7 +2,6 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// transformations.ts - CODE COMPLET
 import beforeSmile1 from "@/assets/before-smile-1.jpg";
 import afterSmile1 from "@/assets/after-smile-1.jpg";
 import beforeSmile2 from "@/assets/before-smile-2.jpg";
