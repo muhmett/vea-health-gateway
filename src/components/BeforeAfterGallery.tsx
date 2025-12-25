@@ -2,8 +2,6 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import beforeSmile2 from "@/assets/before-smile-2.jpg";
-import afterSmile2 from "@/assets/after-smile-2.jpg";
 import beforeSmile3 from "@/assets/before-smile-3.jpg";
 import afterSmile3 from "@/assets/after-smile-3.jpg";
 import beforeHair1 from "@/assets/before-hair-1.jpg";
@@ -18,6 +16,8 @@ import beforeSmile1 from "@/assets/before-smile-1.jpg";
 import afterSmile1 from "@/assets/after-smile-1.jpg";
 import beforeHair2 from "@/assets/before-hair-2.jpg";
 import afterHair2 from "@/assets/after-hair-2.jpg";
+import beforeSmile2 from "@/assets/before-smile-2.jpg";
+import afterSmile2 from "@/assets/after-smile-2.jpg";
 import beforeSmile7 from "@/assets/before-smile-7.jpg";
 import afterSmile7 from "@/assets/after-smile-7.jpg";
 
